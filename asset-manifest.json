@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/lvh/static/js/main.4a51c65e.js",
-    "static/media/graphite-bg.jpg": "/lvh/static/media/graphite-bg.3b3bb6f3879cd19c9e24.jpg",
+    "main.js": "/lvh/static/js/main.26a98bc0.js",
+    "static/media/graphite-bg.jpg": "/lvh/static/media/graphite-bg.7d4c99a2fbb147cdadd5.jpg",
     "static/media/macbook.png": "/lvh/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
     "static/media/bg-coworking.jpeg": "/lvh/static/media/bg-coworking.06bccc47fe6ae5366bf8.jpeg",
     "static/media/bg-sign-in-basic.jpeg": "/lvh/static/media/bg-sign-in-basic.f327db1d0e4b00ba3c81.jpeg",
@@ -33,9 +33,9 @@
     "static/media/logo-nasa.svg": "/lvh/static/media/logo-nasa.c5d11f8820bfde5fd64db0074156e06c.svg",
     "static/media/logo-netflix.svg": "/lvh/static/media/logo-netflix.432ed6b5c31b9bcab9a38e32bf46a1e9.svg",
     "index.html": "/lvh/index.html",
-    "main.4a51c65e.js.map": "/lvh/static/js/main.4a51c65e.js.map"
+    "main.26a98bc0.js.map": "/lvh/static/js/main.26a98bc0.js.map"
   },
   "entrypoints": [
-    "static/js/main.4a51c65e.js"
+    "static/js/main.26a98bc0.js"
   ]
 }
