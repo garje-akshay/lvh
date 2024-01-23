@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -29,7 +14,6 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
@@ -44,7 +28,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/graphite-bg.jpg";
 
 function Presentation() {
   return (
@@ -54,16 +38,20 @@ function Presentation() {
         action={{
           type: "external",
           route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          label: "Contact Us",
           color: "info",
         }}
         sticky
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="65vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
+            `${linearGradient(
+              rgba(gradients["dark"] ? gradients["dark"].main : gradients.dark.main, 0.6),
+              rgba(gradients["dark"] ? gradients["dark"].main : gradients.dark.main, 1)
+            )}, url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
@@ -71,11 +59,11 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <Grid container item xs={12} lg={7} justifyContent="start">
             <MKTypography
               variant="h1"
               color="white"
-              mt={-6}
+              textAlign="left"
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
@@ -83,18 +71,17 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Excellence in lubricants with Next generation of Graphite
             </MKTypography>
-            <MKTypography
+            {/*<MKTypography
               variant="body1"
               color="white"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
-            </MKTypography>
+              Excellence in lubricants with Next generation of Graphite  
+            </MKTypography>*/}
           </Grid>
         </Container>
       </MKBox>
@@ -109,7 +96,7 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
+        {/*<Counters />*/}
         <Information />
         <DesignBlocks />
         <Pages />

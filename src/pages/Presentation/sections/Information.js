@@ -21,14 +21,11 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 
 // Material Kit 2 React examples
-import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
-import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 // Images
-import bgFront from "assets/images/rotating-card-bg-front.jpeg";
-import bgBack from "assets/images/rotating-card-bg-back.jpeg";
+import graphite from "assets/images/graphite-box.jpg";
 
 function Information() {
   return (
@@ -36,18 +33,11 @@ function Information() {
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
+            {/*<RotatingCard>
               <RotatingCardFront
                 image={bgFront}
-                icon="touch_app"
-                title={
-                  <>
-                    Feel the
-                    <br />
-                    Material Kit
-                  </>
-                }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                title={<>Applications</>}
+                description="A range of solutions for addressing complex challenges."
               />
               <RotatingCardBack
                 image={bgBack}
@@ -59,7 +49,13 @@ function Information() {
                   label: "start with header",
                 }}
               />
-            </RotatingCard>
+            </RotatingCard>*/}
+            <RotatingCardFront
+              color={"dark"}
+              image={graphite}
+              title={<>Applications</>}
+              description="A range of solutions for addressing complex challenges."
+            />
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>

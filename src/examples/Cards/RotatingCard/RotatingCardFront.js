@@ -30,7 +30,7 @@ function RotatingCardFront({ color, image, icon, title, description }) {
       justifyContent="center"
       alignContent="center"
       borderRadius="lg"
-      coloredShadow={color}
+      shadow="xl"
       width="100%"
       position="relative"
       zIndex={2}
@@ -53,7 +53,7 @@ function RotatingCardFront({ color, image, icon, title, description }) {
         <MKTypography variant="h3" color="white" gutterBottom>
           {title}
         </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
+        <MKTypography variant="h6" color="white" opacity={0.8}>
           {description}
         </MKTypography>
       </MKBox>
@@ -63,7 +63,7 @@ function RotatingCardFront({ color, image, icon, title, description }) {
 
 // Setting default props for the RotatingCardFront
 RotatingCardFront.defaultProps = {
-  color: "info",
+  color: "dark",
   icon: "",
 };
 

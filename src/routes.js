@@ -68,7 +68,7 @@ import ProgressBars from "layouts/sections/elements/progress-bars";
 import Toggles from "layouts/sections/elements/toggles";
 import Typography from "layouts/sections/elements/typography";
 
-const routes = [
+let routes = [
   {
     name: "pages",
     icon: <Icon>dashboard</Icon>,
@@ -271,4 +271,5 @@ const routes = [
   },
 ];
 
-export default routes;
+routes = [];
+export default [routes];
