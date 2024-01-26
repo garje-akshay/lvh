@@ -23,13 +23,18 @@ import MKBox from "components/MKBox";
 // Material Kit 2 React examples
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
+import polymers from "assets/images/polymers.svg";
+import metallurgy from "assets/images/metallurgy.svg";
+import energy from "assets/images/energy.svg";
+import drilling from "assets/images/drilling.svg";
+import friction from "assets/images/friction.svg";
 
 // Images
 import graphite from "assets/images/graphite-box.jpg";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={6}>
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
@@ -60,35 +65,23 @@ function Information() {
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
-                />
+                <DefaultInfoCard icon={drilling} title="Lost Circulation Material" description="" />
               </Grid>
               <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
-                />
+                <DefaultInfoCard icon={energy} title="Energy Thermal Management" description="" />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
-                />
+                <DefaultInfoCard icon={friction} title="Friction Materials" description="" />
               </Grid>
               <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
-                />
+                <DefaultInfoCard icon={metallurgy} title="Metallurgy" description="" />
+              </Grid>
+            </Grid>
+            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
+              <Grid item xs={12} md={6}>
+                <DefaultInfoCard icon={polymers} title="Polymers" description="" />
               </Grid>
             </Grid>
           </Grid>

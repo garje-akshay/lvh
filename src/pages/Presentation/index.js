@@ -6,22 +6,17 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
@@ -44,7 +39,7 @@ function Presentation() {
         sticky
       />
       <MKBox
-        minHeight="65vh"
+        minHeight="50vh"
         width="100%"
         sx={{
           backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
@@ -71,7 +66,10 @@ function Presentation() {
                 },
               })}
             >
-              Excellence in lubricants with Next generation of Graphite
+              <i>
+                Excellence in lubricants with Next generation of&#160;
+                <u>Graphite</u>
+              </i>
             </MKTypography>
             {/*<MKTypography
               variant="body1"
@@ -100,7 +98,7 @@ function Presentation() {
         <Information />
         <DesignBlocks />
         <Pages />
-        <Container sx={{ mt: 6 }}>
+        {/* <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
         <Container>
@@ -200,7 +198,7 @@ function Presentation() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+        </MKBox> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
