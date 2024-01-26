@@ -500,7 +500,18 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
                   {action.label}
                 </MKButton>
               ) : (
-                <MKButton
+                action.type === "click" ? <MKButton
+                onClick={action.onClick}
+                variant={
+                  action.color === "white" || action.color === "default"
+                    ? "contained"
+                    : "gradient"
+                }
+                color={action.color ? action.color : "info"}
+                size="small"
+              >
+                {action.label}
+              </MKButton>:<MKButton
                   component="a"
                   href={action.route}
                   target="_blank"
@@ -566,6 +577,7 @@ DefaultNavbar.propTypes = {
     PropTypes.shape({
       type: PropTypes.oneOf(["external", "internal"]).isRequired,
       route: PropTypes.string.isRequired,
+      onClick:PropTypes.func,
       color: PropTypes.oneOf([
         "primary",
         "secondary",

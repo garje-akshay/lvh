@@ -24,27 +24,38 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/graphite-bg.jpg";
+import Data from "./sections/Data";
+import CenteredFooter from "examples/Footers/CenteredFooter";
+import Company from "./sections/Company";
+import { Divider, Icon, Modal, Slide, Stack } from "@mui/material";
+import MKAlertCloseIcon from "components/MKAlert/MKAlertCloseIcon";
+import { useState } from "react";
+import MKButton from "components/MKButton";
+import SimpleFooter from "examples/Footers/SimpleFooter";
 
 function Presentation() {
+
+  const [show, setShow] = useState(false);
+  const toggleModal = () => setShow(!show);
   return (
     <>
       <DefaultNavbar
-        routes={routes}
+        routes={[]}
         action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
+          type: "click",
+          onClick:toggleModal,
           label: "Contact Us",
           color: "info",
         }}
         sticky
       />
       <MKBox
-        minHeight="50vh"
+        minHeight="65vh"
         width="100%"
         sx={{
           backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
             `${linearGradient(
-              rgba(gradients["dark"] ? gradients["dark"].main : gradients.dark.main, 0.6),
+              rgba(gradients["dark"] ? gradients["dark"].main : gradients.dark.main, 0.7),
               rgba(gradients["dark"] ? gradients["dark"].main : gradients.dark.main, 1)
             )}, url(${bgImage})`,
           backgroundSize: "cover",
@@ -54,32 +65,23 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="start">
+          <Grid container item xs={12} lg={12} justifyContent="center">
             <MKTypography
-              variant="h1"
+              variant="h2"
               color="white"
-              textAlign="left"
+              textAlign="center"
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
+                maxWidth:"60%",
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
               })}
             >
-              <i>
-                Excellence in lubricants with Next generation of&#160;
-                <u>Graphite</u>
-              </i>
+              Excellence in lubricants with Next generation of&#160;
+              <u>Graphite</u>
             </MKTypography>
-            {/*<MKTypography
-              variant="body1"
-              color="white"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              Excellence in lubricants with Next generation of Graphite  
-            </MKTypography>*/}
+           
           </Grid>
         </Container>
       </MKBox>
@@ -95,9 +97,10 @@ function Presentation() {
         }}
       >
         {/*<Counters />*/}
+
         <Information />
-        <DesignBlocks />
-        <Pages />
+        {/* <DesignBlocks />
+        <Pages /> */}
         {/* <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
@@ -200,9 +203,79 @@ function Presentation() {
           </Container>
         </MKBox> */}
       </Card>
+
+      <Data />
+      <Company />
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        {/* <DefaultFooter content={footerRoutes} /> */}
+        <SimpleFooter/>
       </MKBox>
+      <Modal open={show} onClose={toggleModal} sx={{ display: "grid", placeItems: "center" }}>
+          <Slide direction="down" in={show} timeout={500}>
+            <Card>
+          <Stack>
+              <MKBox display="flex" alignItems="center" p={2}>
+                <MKBox
+                  width="3rem"
+                  height="3rem"
+                  variant="gradient"
+                  bgColor="info"
+                  color="white"
+                  coloredShadow="info"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderRadius="xl"
+                >
+                  <Icon fontSize="small">phone</Icon>
+                </MKBox>
+                <MKTypography variant="body2" color="text" pl={2}>
+               <strong>+49 6123 703730</strong> 
+                </MKTypography>
+              </MKBox>
+              <MKBox display="flex" alignItems="center" p={2}>
+                <MKBox
+                  width="3rem"
+                  height="3rem"
+                  variant="gradient"
+                  bgColor="info"
+                  color="white"
+                  coloredShadow="info"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderRadius="xl"
+                >
+                  <Icon fontSize="small">email</Icon>
+                </MKBox>
+                <MKTypography variant="body2" color="text" pl={2}>
+                <strong>info@lvhproducts.de</strong>
+                </MKTypography>
+              </MKBox>
+              <MKBox display="flex" alignItems="center" p={2}>
+                <MKBox
+                  width="3rem"
+                  height="3rem"
+                  variant="gradient"
+                  bgColor="info"
+                  color="white"
+                  coloredShadow="info"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderRadius="xl"
+                >
+                  <Icon fontSize="small">map</Icon>
+                </MKBox>
+                <MKTypography variant="body2" color="text" pl={2}>
+                  <strong>LVH Products GmbH.</strong> <br />
+                  Rosengasse 1, Eltville DE65343 , Germany
+                </MKTypography>
+              </MKBox>
+            </Stack>
+            </Card>
+          </Slide>
+        </Modal>
     </>
   );
 }

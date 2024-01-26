@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
   "description": "React version of Material Kit 2 by Creative Tim",
   "homepage": "https://garje-akshay.github.io/lvh",
   "repository": {
@@ -42,12 +41,6 @@
     "lint": "eslint ./src",
     "prettify": "prettier --write .",
     "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [

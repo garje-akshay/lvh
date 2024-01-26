@@ -54,8 +54,9 @@ function SimpleFooter({ company, links, light }) {
       <MKBox
         width="100%"
         display="flex"
+        mb={2}
         flexDirection={{ xs: "column", lg: "row" }}
-        justifyContent="space-between"
+        justifyContent="center"
         alignItems="center"
       >
         <MKBox
@@ -66,21 +67,9 @@ function SimpleFooter({ company, links, light }) {
           color={light ? "white" : "text"}
           fontSize={size.sm}
         >
-          &copy; {new Date().getFullYear()}, made with
-          <MKBox fontSize={size.md} color={light ? "white" : "text"} mb={-0.5} mx={0.25}>
-            <Icon color="inherit" fontSize="inherit">
-              favorite
-            </Icon>
-          </MKBox>
-          by
-          <Link href={href} target="_blank">
-            <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
-              &nbsp;{name}&nbsp;
-            </MKTypography>
-          </Link>
-          for a better web.
+         <MKTypography variant="body2" color="secondary" fontWeight="regular">&copy; {new Date().getFullYear()} ,  <strong>LVH Products</strong>, All Rights Reserved<br/></MKTypography> 
         </MKBox>
-        <MKBox
+        {/* <MKBox
           component="ul"
           sx={({ breakpoints }) => ({
             display: "flex",
@@ -98,7 +87,7 @@ function SimpleFooter({ company, links, light }) {
           })}
         >
           {renderLinks()}
-        </MKBox>
+        </MKBox> */}
       </MKBox>
     </Container>
   );

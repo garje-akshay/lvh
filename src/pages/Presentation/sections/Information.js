@@ -31,11 +31,25 @@ import friction from "assets/images/friction.svg";
 
 // Images
 import graphite from "assets/images/graphite-box.jpg";
+import MKTypography from "components/MKTypography";
 
 function Information() {
   return (
-    <MKBox component="section" py={6}>
+    <MKBox component="section" py={3}>
       <Container>
+      <MKTypography
+              variant="subtitle1"
+              color="text"
+              textAlign="Left"
+              mt={1}
+              pb={3}
+            >
+              Graphite is a Unique and essential form of Carbon in current Industrial society and
+              becoming an indispensable material in many novel innovations.<br/> Graphite is a material
+              having special electrical, thermal, and mechanical properties and has many general
+              applications like in steel making, refractories, lubricant, batteries, metal forming,
+              etc.
+            </MKTypography>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             {/*<RotatingCard>
@@ -62,10 +76,10 @@ function Information() {
               description="A range of solutions for addressing complex challenges."
             />
           </Grid>
-          <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
+          <Grid item xs={12} lg={7} >
             <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard icon={drilling} title="Lost Circulation Material" description="" />
+            <Grid item xs={12} md={6}>
+                <DefaultInfoCard icon={polymers} title="Polymers" description="" />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard icon={energy} title="Energy Thermal Management" description="" />
@@ -79,13 +93,9 @@ function Information() {
                 <DefaultInfoCard icon={metallurgy} title="Metallurgy" description="" />
               </Grid>
             </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard icon={polymers} title="Polymers" description="" />
-              </Grid>
-            </Grid>
           </Grid>
         </Grid>
+       
       </Container>
     </MKBox>
   );

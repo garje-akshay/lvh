@@ -1,5924 +1,687 @@
+import React from "react";
 
-import React from 'react'
+import { Table, TableBody, TableRow, TableCell, TableContainer, Paper, Grid, Card } from "@mui/material";
+import MKTypography from "components/MKTypography";
 
-function Data() {
+const StyledTableCell = ({ children }) => {
   return (
-    <div contenteditable="false" spellcheck="false" tabindex="0">
-    <div>
-        <p style="text-align: justify;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-    </div>
-    <div>
-        <div>
-            
-            <table border="1" style="border-collapse: collapse;">
-                <tbody>
-                    <tr>
-                        <td style="color: transparent;border: 1px solid;">
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">Sr. No.</span></strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">Grade Name</span></strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">Type&nbsp;</span></strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">Carbon</span></strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">Ash</span></strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">Moisture&nbsp;</span></strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;" colspan="3">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">Particle Size&nbsp;</span></strong><span style="color: rgb(255, 0, 0);font-size: 12pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">D10</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">D50</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: center;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">D90</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">194 MADAGASCAR</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">2</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;300</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,07 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,93 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,43 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">2,10&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">12,70&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">44,10&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">3</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;4801</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,87 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,13 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp; &nbsp;8,00&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">4</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;+597</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">97,38 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">2,62 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,33 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">5</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;CR 90101</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">90,74 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">9,26 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,43 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">6</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;CR 90108</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">90,89 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">9,11 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,31 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">7</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;CY3220</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> 90,47%</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> 9,53 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> 0,23 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">8</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;FIN 80220</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">80,38 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">16,36 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,43 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">9</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;FL 10501&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">approx. 99,5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;<br></span><span style="color: rgb(0, 0, 0);font-size: 11pt;">approx. 0,5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">approx. 0,5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,6 &ndash; 0,8 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">approx. 1,6 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">10</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;FL 10509+</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,92 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,58&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">3,91&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">7,60&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">11</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;FL 10550+</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,92 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;0,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;<br></span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;3,65 &micro;m&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">12,50 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">32,59 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">12</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;FLN 100304X</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">13</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;FLN 80100</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp; &nbsp;81,70 % &nbsp;&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp; &nbsp;18,30 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp; 0,32 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">14</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;R 15600</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,60 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,40 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,42 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">15</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">LVH&nbsp;RES 1030</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">16</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;LVH&nbsp;CR 94062</span><span style="color: rgb(0, 0, 0);font-size: 9pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 94 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 4 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0,5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">17</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FLN 95515</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Large Crystalline natural&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 95 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0,50 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&lt;15 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&lt;45 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">18</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;LVH&nbsp;FLN 100505</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Large Crystalline natural&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 99.5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0.50 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0.50 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&lt;5.5 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&lt;12 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">19</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;PC 103165</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Resilient&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,7 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0.30%</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,25 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">20</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;LVH&nbsp;PC 103375</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Resilient&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,7 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0.30%</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,25 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">21</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;R10003 plus</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,9 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0,10 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0,50 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;2 &ndash; 3 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;ca. 5 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">22</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;R990501</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">. 99,5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,6 &ndash; 0,8 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,6 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">23</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;LVH&nbsp;R991005</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 99 % typical: 99,7 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 1,0 % typical: 0,3 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0,8 % typical: 0,3 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 2,0&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;<br></span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&micro;m typical: 1,6 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 5,0&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;<br></span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&micro;m typical: 4,6 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 11,0&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;<br></span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&micro;m typical: 9,5 &micro;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">24</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 15100+</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;Synthetic&nbsp;</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">ca. 99,9 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> 0,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp; 0,32 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">25</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;R 15500+</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,91 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,09 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,31 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">26</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL  10140</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,89 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,11 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,22 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">   5,50&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">  17,36&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">    40,72&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">27</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL  10175</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,38 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,62 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,13 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">28</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 10170</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,62 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,38 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,49 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">29</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 10305G</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,47 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,53 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,41 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp; &nbsp;26,24&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">  88,29&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">      199,38&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">30</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;R 10150</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,94 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,06 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,18 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">21,55&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">68,60&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">149,10&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">31</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 10305</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,72 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,28 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,37 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,59&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">3,90&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">7,63&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">32</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH FLN 10575</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,57 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,43 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,33 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">33</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FLN 80220</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> 80,38 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">16,36 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp; &nbsp; &nbsp; &nbsp;0,43 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">34</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;CR 90062C</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">90,58 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">9,42 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">    0,43 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">36</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;M 95545</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">98,12 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,88 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,48 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">37</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;R 1015</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,70 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,30 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">2,50&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">6,20&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp; &nbsp; 12,50&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">38</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;R 10700</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,61 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,39 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,44 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">39</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;N 1208</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">97,92 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">2,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,44 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,68&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">40</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FLN 100304</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,82 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,18 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,43 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">      7,67&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">41</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;NCY 115500</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><strong><span style="color: rgb(0, 0, 0);font-size: 11pt;">98,42 %</span></strong><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,58 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,42 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">42</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;+885</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min 85 % (LOI)</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">43</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL C100</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 99.995%</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0.005 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0,50 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">44</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 10506+</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,92 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,49&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">3,48&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">6,75&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">45</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 10501+</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,92 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,18&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">2,78&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">5,40&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">46</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 1105</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,12 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,88 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,41 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">8,35&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">47</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;R 1035</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,87 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,13 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">4,55&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">16,10&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">35,10&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">48</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 10520+</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,92 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">2,97&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">9,19&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">20,75&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">49</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;45-50</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,92 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">3,65&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">12,50&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">32,59&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">50</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;08-09</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,92 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,08 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,34 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">1,58&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">3,91&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">7,60&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">51</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FLN 80150</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">84,38 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">15,62 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,93 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">52</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;FL 10105</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Synthetic</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">99,62 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,38 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">0,48 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: rgb(255, 255, 255);background-color: rgb(255, 255, 255);">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">5,46&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">53</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;CR 90062</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Crystalline</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 90 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 6 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 0,5 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">54</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;PR-PSG 7/94</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 94 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 6 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 1 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;5 &ndash; 7&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">about 12&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">55</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;PR-PSG 7/96</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 96 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 4 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 1 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">5 &ndash; 7&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;12&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">56</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;PR-PSG 9/94</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 94 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 6 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 1 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;7 &ndash; 9&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">about 16&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">57</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">LVH&nbsp;PR-PSG 9/96</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">Natural</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">min. 96 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 4 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">max. 1 %</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;"> </span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">7 &ndash; 9&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="color: transparent;">
-                            
-                            
-                            
-                            
-                            <div>
-                                <div>
-                                    <p style="text-align: left;color: transparent;"><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;about 16&nbsp;&mu;m</span><span style="color: rgb(0, 0, 0);font-size: 11pt;">&nbsp;</span></p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-  )
-}
+    <TableCell
+      sx={{
+        maxWidth: 100,
+        border: "1px solid rgba(224, 224, 224, 1)",
+        textAlign:"center"
+      }}
+    >
+      {children}
+    </TableCell>
+  );
+};
 
-export default Data
+const Data = () => {
+  return (
+    <Grid
+      container
+      item
+      flexDirection="column"
+      alignItems="start"
+      sx={{ textAlign: "start", my: 6, mx: "auto", px: 3 }}
+    >
+      <MKTypography variant="h2" fontWeight="bold" sx={{ paddingBottom: 2, px: 4  }}>
+        Our Product Range
+      </MKTypography>
+      <MKTypography variant="body1" color="text" sx={{ paddingBottom: 8, px: 4  }}>
+        We deliver the wide ranges/grades of graphite. Our processing functionality and associations
+        with worldwide Mine organizations and synthetic graphite producers enables us to deliver all
+        kind of Natural, Synthetic and amorphous graphite of required specific properties like
+        purity, particle size, crystallinelity, etc. Keen attention to details, Adaptability and
+        intensive material testing work ensures that the graphite we provide meets your specific
+        requirements.
+      </MKTypography>
+      <Card sx={{
+          p: 3,
+          width:"100%",
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backdropFilter: "saturate(200%) blur(30px)",
+          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+        }} >
+          <TableContainer>
+        <Table>
+          <TableRow>
+            <StyledTableCell><strong>Sr. No.</strong></StyledTableCell>
+            <StyledTableCell><strong>Grade Name</strong></StyledTableCell>
+            <StyledTableCell><strong>Type</strong></StyledTableCell>
+            <StyledTableCell><strong>Carbon</strong></StyledTableCell>
+            <StyledTableCell><strong>Ash</strong></StyledTableCell>
+            <StyledTableCell><strong>Moisture</strong></StyledTableCell>
+            <StyledTableCell><strong>Particle Size D10</strong></StyledTableCell>
+            <StyledTableCell><strong>Particle Size D50</strong></StyledTableCell>
+            <StyledTableCell><strong>Particle Size D90</strong></StyledTableCell>
+          </TableRow>
+
+          <TableBody>
+            <TableRow>
+              <StyledTableCell>1</StyledTableCell>
+              <StyledTableCell>194 MADAGASCAR</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>2</StyledTableCell>
+              <StyledTableCell>LVH 300</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>99,07 %</StyledTableCell>
+              <StyledTableCell>0,93 %</StyledTableCell>
+              <StyledTableCell>0,43 %</StyledTableCell>
+              <StyledTableCell>2,10 μm</StyledTableCell>
+              <StyledTableCell>12,70 μm</StyledTableCell>
+              <StyledTableCell>44,10 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>3</StyledTableCell>
+              <StyledTableCell>LVH 4801</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,87 %</StyledTableCell>
+              <StyledTableCell>0,13 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>8,00 μm</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>4</StyledTableCell>
+              <StyledTableCell>LVH +597</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>97,38 %</StyledTableCell>
+              <StyledTableCell>2,62 %</StyledTableCell>
+              <StyledTableCell>0,33 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>5</StyledTableCell>
+              <StyledTableCell>LVH CR 90101</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>90,74 %</StyledTableCell>
+              <StyledTableCell>9,26 %</StyledTableCell>
+              <StyledTableCell>0,43 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>6</StyledTableCell>
+              <StyledTableCell>LVH CR 90108</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>90,89 %</StyledTableCell>
+              <StyledTableCell>9,11 %</StyledTableCell>
+              <StyledTableCell>0,31 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>7</StyledTableCell>
+              <StyledTableCell>LVH CY3220</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>90,47%</StyledTableCell>
+              <StyledTableCell>9,53 %</StyledTableCell>
+              <StyledTableCell>0,23 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>8</StyledTableCell>
+              <StyledTableCell>LVH FIN 80220</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>80,38 %</StyledTableCell>
+              <StyledTableCell>16,36 %</StyledTableCell>
+              <StyledTableCell>0,43 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>9</StyledTableCell>
+              <StyledTableCell>LVH FL 10501</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>approx. 99,5 %</StyledTableCell>
+              <StyledTableCell>approx. 0,5 %</StyledTableCell>
+              <StyledTableCell>approx. 0,5 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>0,6 – 0,8 µm</StyledTableCell>
+              <StyledTableCell>approx. 1,6 µm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>10</StyledTableCell>
+              <StyledTableCell>LVH FL 10509+</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,92 %</StyledTableCell>
+              <StyledTableCell>0,08 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>1,58 μm</StyledTableCell>
+              <StyledTableCell>3,91 μm</StyledTableCell>
+              <StyledTableCell>7,60 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>11</StyledTableCell>
+              <StyledTableCell>LVH FL 10550+</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,92 %</StyledTableCell>
+              <StyledTableCell>0,08 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>3,65 µm</StyledTableCell>
+              <StyledTableCell>12,50 µm</StyledTableCell>
+              <StyledTableCell>32,59 µm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>12</StyledTableCell>
+              <StyledTableCell>LVH FLN 100304X</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>13</StyledTableCell>
+              <StyledTableCell>LVH FLN 80100</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>81,70 %</StyledTableCell>
+              <StyledTableCell>18,30 %</StyledTableCell>
+              <StyledTableCell>0,32 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>14</StyledTableCell>
+              <StyledTableCell>LVH R 15600</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,60 %</StyledTableCell>
+              <StyledTableCell>0,40 %</StyledTableCell>
+              <StyledTableCell>0,42 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>15</StyledTableCell>
+              <StyledTableCell>LVH RES 1030</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>16</StyledTableCell>
+              <StyledTableCell>LVH CR 94062</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>min. 94 %</StyledTableCell>
+              <StyledTableCell>max. 4 %</StyledTableCell>
+              <StyledTableCell>max. 0,5 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>17</StyledTableCell>
+              <StyledTableCell>LVH FLN 95515</StyledTableCell>
+              <StyledTableCell>Large Crystalline natural</StyledTableCell>
+              <StyledTableCell>min. 95 %</StyledTableCell>
+              <StyledTableCell>max. 5 %</StyledTableCell>
+              <StyledTableCell>max. 0,50 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>&lt;15 µm</StyledTableCell>
+              <StyledTableCell>&lt;45 µm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>18</StyledTableCell>
+              <StyledTableCell>LVH FLN 100505</StyledTableCell>
+              <StyledTableCell>Large Crystalline natural</StyledTableCell>
+              <StyledTableCell>min. 99.5 %</StyledTableCell>
+              <StyledTableCell>max. 0.50 %</StyledTableCell>
+              <StyledTableCell>max. 0.50 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>&lt;5.5 µm</StyledTableCell>
+              <StyledTableCell>&lt;12 µm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>19</StyledTableCell>
+              <StyledTableCell>LVH PC 103165</StyledTableCell>
+              <StyledTableCell>Resilient</StyledTableCell>
+              <StyledTableCell>99,7 %</StyledTableCell>
+              <StyledTableCell>0.30%</StyledTableCell>
+              <StyledTableCell>0,25 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>20</StyledTableCell>
+              <StyledTableCell>LVH PC 103375</StyledTableCell>
+              <StyledTableCell>Resilient</StyledTableCell>
+              <StyledTableCell>99,7 %</StyledTableCell>
+              <StyledTableCell>0.30%</StyledTableCell>
+              <StyledTableCell>0,25 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>21</StyledTableCell>
+              <StyledTableCell>LVH R10003 plus</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,9 %</StyledTableCell>
+              <StyledTableCell>max. 0,10 %</StyledTableCell>
+              <StyledTableCell>max. 0,50 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>2 – 3 µm</StyledTableCell>
+              <StyledTableCell>ca. 5 µm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>22</StyledTableCell>
+              <StyledTableCell>LVH R990501</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>. 99,5 %</StyledTableCell>
+              <StyledTableCell>0,5 %</StyledTableCell>
+              <StyledTableCell>0,5 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>0,6 – 0,8 µm</StyledTableCell>
+              <StyledTableCell>1,6 µm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>23</StyledTableCell>
+              <StyledTableCell>LVH R991005</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>min. 99 % typical: 99,7 %</StyledTableCell>
+              <StyledTableCell>max. 1,0 % typical: 0,3 %</StyledTableCell>
+              <StyledTableCell>max. 0,8 % typical: 0,3 %</StyledTableCell>
+              <StyledTableCell>max. 2,0 µm typical: 1,6 µm </StyledTableCell>
+              <StyledTableCell>max. 5,0 µm typical: 4,6 µm </StyledTableCell>
+              <StyledTableCell>max. 11,0 µm typical: 9,5 µm </StyledTableCell>
+            </TableRow>
+
+            <TableRow>
+              <StyledTableCell>24</StyledTableCell>
+              <StyledTableCell>LVH FL 15100+</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>ca. 99,9 %</StyledTableCell>
+              <StyledTableCell>0,08 %</StyledTableCell>
+              <StyledTableCell>0,32 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>25</StyledTableCell>
+              <StyledTableCell>LVH R 15500+</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,91 %</StyledTableCell>
+              <StyledTableCell>0,09 %</StyledTableCell>
+              <StyledTableCell>0,31 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>26</StyledTableCell>
+              <StyledTableCell>LVH FL 10140</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,89 %</StyledTableCell>
+              <StyledTableCell>0,11 %</StyledTableCell>
+              <StyledTableCell>0,22 %</StyledTableCell>
+              <StyledTableCell>5,50 μm</StyledTableCell>
+              <StyledTableCell>17,36 μm</StyledTableCell>
+              <StyledTableCell>40,72 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>27</StyledTableCell>
+              <StyledTableCell>LVH FL 10175</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,38 %</StyledTableCell>
+              <StyledTableCell>0,62 %</StyledTableCell>
+              <StyledTableCell>0,13 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>28</StyledTableCell>
+              <StyledTableCell>LVH FL 10170</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,62 %</StyledTableCell>
+              <StyledTableCell>0,38 %</StyledTableCell>
+              <StyledTableCell>0,49 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>29</StyledTableCell>
+              <StyledTableCell>LVH FL 10305G</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,47 %</StyledTableCell>
+              <StyledTableCell>0,53 %</StyledTableCell>
+              <StyledTableCell>0,41 %</StyledTableCell>
+              <StyledTableCell>26,24 μm</StyledTableCell>
+              <StyledTableCell>88,29 μm</StyledTableCell>
+              <StyledTableCell>199,38 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>30</StyledTableCell>
+              <StyledTableCell>LVH R 10150</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,94 %</StyledTableCell>
+              <StyledTableCell>0,06 %</StyledTableCell>
+              <StyledTableCell>0,18 %</StyledTableCell>
+              <StyledTableCell>21,55 μm</StyledTableCell>
+              <StyledTableCell>68,60 μm</StyledTableCell>
+              <StyledTableCell>149,10 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>31</StyledTableCell>
+              <StyledTableCell>LVH FL 10305</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,72 %</StyledTableCell>
+              <StyledTableCell>0,28 %</StyledTableCell>
+              <StyledTableCell>0,37 %</StyledTableCell>
+              <StyledTableCell>1,59 μm</StyledTableCell>
+              <StyledTableCell>3,90 μm</StyledTableCell>
+              <StyledTableCell>7,63 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>32</StyledTableCell>
+              <StyledTableCell>LVH FLN 10575</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>99,57 %</StyledTableCell>
+              <StyledTableCell>0,43 %</StyledTableCell>
+              <StyledTableCell>0,33 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>33</StyledTableCell>
+              <StyledTableCell>LVH FLN 80220</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>80,38 %</StyledTableCell>
+              <StyledTableCell>16,36 %</StyledTableCell>
+              <StyledTableCell>0,43 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>34</StyledTableCell>
+              <StyledTableCell>LVH CR 90062C</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>90,58 %</StyledTableCell>
+              <StyledTableCell>9,42 %</StyledTableCell>
+              <StyledTableCell>0,43 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>36</StyledTableCell>
+              <StyledTableCell>LVH M 95545</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>98,12 %</StyledTableCell>
+              <StyledTableCell>1,88 %</StyledTableCell>
+              <StyledTableCell>0,48 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>37</StyledTableCell>
+              <StyledTableCell>LVH R 1015</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,70 %</StyledTableCell>
+              <StyledTableCell>0,30 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>2,50 μm</StyledTableCell>
+              <StyledTableCell>6,20 μm</StyledTableCell>
+              <StyledTableCell>12,50 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>38</StyledTableCell>
+              <StyledTableCell>LVH R 10700</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,61 %</StyledTableCell>
+              <StyledTableCell>0,39 %</StyledTableCell>
+              <StyledTableCell>0,44 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>39</StyledTableCell>
+              <StyledTableCell>LVH N 1208</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>97,92 %</StyledTableCell>
+              <StyledTableCell>2,08 %</StyledTableCell>
+              <StyledTableCell>0,44 %</StyledTableCell>
+              <StyledTableCell>1,68 μm</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>40</StyledTableCell>
+              <StyledTableCell>LVH FLN 100304</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>99,82 %</StyledTableCell>
+              <StyledTableCell>0,18 %</StyledTableCell>
+              <StyledTableCell>0,43 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>7,67 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>41</StyledTableCell>
+              <StyledTableCell>LVH NCY 115500</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>98,42 %</StyledTableCell>
+              <StyledTableCell>1,58 %</StyledTableCell>
+              <StyledTableCell>0,42 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>42</StyledTableCell>
+              <StyledTableCell>LVH +885</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>min 85 % (LOI)</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>43</StyledTableCell>
+              <StyledTableCell>LVH FL C100</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>min. 99.995%</StyledTableCell>
+              <StyledTableCell>max. 0.005 %</StyledTableCell>
+              <StyledTableCell>max. 0,50 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>44</StyledTableCell>
+              <StyledTableCell>LVH FL 10506+</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,92 %</StyledTableCell>
+              <StyledTableCell>0,08 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>1,49 μm</StyledTableCell>
+              <StyledTableCell>3,48 μm</StyledTableCell>
+              <StyledTableCell>6,75 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>45</StyledTableCell>
+              <StyledTableCell>LVH FL 10501+</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,92 %</StyledTableCell>
+              <StyledTableCell>0,08 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>1,18 μm</StyledTableCell>
+              <StyledTableCell>2,78 μm</StyledTableCell>
+              <StyledTableCell>5,40 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>46</StyledTableCell>
+              <StyledTableCell>LVH FL 1105</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,12 %</StyledTableCell>
+              <StyledTableCell>0,88 %</StyledTableCell>
+              <StyledTableCell>0,41 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>8,35 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>47</StyledTableCell>
+              <StyledTableCell>LVH R 1035</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,87 %</StyledTableCell>
+              <StyledTableCell>0,13 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>4,55 μm</StyledTableCell>
+              <StyledTableCell>16,10 μm</StyledTableCell>
+              <StyledTableCell>35,10 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>48</StyledTableCell>
+              <StyledTableCell>LVH FL 10520+</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,92 %</StyledTableCell>
+              <StyledTableCell>0,08 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>2,97 μm</StyledTableCell>
+              <StyledTableCell>9,19 μm</StyledTableCell>
+              <StyledTableCell>20,75 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>49</StyledTableCell>
+              <StyledTableCell>LVH 45-50</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,92 %</StyledTableCell>
+              <StyledTableCell>0,08 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>3,65 μm</StyledTableCell>
+              <StyledTableCell>12,50 μm</StyledTableCell>
+              <StyledTableCell>32,59 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>50</StyledTableCell>
+              <StyledTableCell>LVH 08-09</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,92 %</StyledTableCell>
+              <StyledTableCell>0,08 %</StyledTableCell>
+              <StyledTableCell>0,34 %</StyledTableCell>
+              <StyledTableCell>1,58 μm</StyledTableCell>
+              <StyledTableCell>3,91 μm</StyledTableCell>
+              <StyledTableCell>7,60 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>51</StyledTableCell>
+              <StyledTableCell>LVH FLN 80150</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>84,38 %</StyledTableCell>
+              <StyledTableCell>15,62 %</StyledTableCell>
+              <StyledTableCell>0,93 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>52</StyledTableCell>
+              <StyledTableCell>LVH FL 10105</StyledTableCell>
+              <StyledTableCell>Synthetic</StyledTableCell>
+              <StyledTableCell>99,62 %</StyledTableCell>
+              <StyledTableCell>0,38 %</StyledTableCell>
+              <StyledTableCell>0,48 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>5,46 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>53</StyledTableCell>
+              <StyledTableCell>LVH CR 90062</StyledTableCell>
+              <StyledTableCell>Crystalline</StyledTableCell>
+              <StyledTableCell>min. 90 %</StyledTableCell>
+              <StyledTableCell>max. 6 %</StyledTableCell>
+              <StyledTableCell>max. 0,5 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>54</StyledTableCell>
+              <StyledTableCell>LVH PR-PSG 7/94</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>min. 94 %</StyledTableCell>
+              <StyledTableCell>max. 6 %</StyledTableCell>
+              <StyledTableCell>max. 1 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>5 – 7 μm</StyledTableCell>
+              <StyledTableCell>about 12 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>55</StyledTableCell>
+              <StyledTableCell>LVH PR-PSG 7/96</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>min. 96 %</StyledTableCell>
+              <StyledTableCell>max. 4 %</StyledTableCell>
+              <StyledTableCell>max. 1 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>5 – 7 μm</StyledTableCell>
+              <StyledTableCell>12 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>56</StyledTableCell>
+              <StyledTableCell>LVH PR-PSG 9/94</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>min. 94 %</StyledTableCell>
+              <StyledTableCell>max. 6 %</StyledTableCell>
+              <StyledTableCell>max. 1 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>7 – 9 μm</StyledTableCell>
+              <StyledTableCell>about 16 μm</StyledTableCell>
+            </TableRow>
+            <TableRow>
+              <StyledTableCell>57</StyledTableCell>
+              <StyledTableCell>LVH PR-PSG 9/96</StyledTableCell>
+              <StyledTableCell>Natural</StyledTableCell>
+              <StyledTableCell>min. 96 %</StyledTableCell>
+              <StyledTableCell>max. 4 %</StyledTableCell>
+              <StyledTableCell>max. 1 %</StyledTableCell>
+              <StyledTableCell> — </StyledTableCell>
+              <StyledTableCell>7 – 9 μm</StyledTableCell>
+              <StyledTableCell>about 16 μm</StyledTableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+        </TableContainer>
+      </Card>
+    </Grid>
+  );
+};
+
+export default Data;
