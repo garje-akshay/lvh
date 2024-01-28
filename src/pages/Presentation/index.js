@@ -9,32 +9,25 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Presentation page sections
 import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
 
 // Presentation page components
 
 // Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/graphite-bg.jpg";
 import Data from "./sections/Data";
-import CenteredFooter from "examples/Footers/CenteredFooter";
 import Company from "./sections/Company";
-import { Divider, Icon, Modal, Slide, Stack } from "@mui/material";
-import MKAlertCloseIcon from "components/MKAlert/MKAlertCloseIcon";
+import { Icon, Modal, Slide, Stack } from "@mui/material";
 import { useState } from "react";
-import MKButton from "components/MKButton";
 import SimpleFooter from "examples/Footers/SimpleFooter";
+import TypeWriterEffect from "react-typewriter-effect";
+import pxToRem from "assets/theme/functions/pxToRem";
 
 function Presentation() {
-
   const [show, setShow] = useState(false);
   const toggleModal = () => setShow(!show);
   return (
@@ -43,7 +36,7 @@ function Presentation() {
         routes={[]}
         action={{
           type: "click",
-          onClick:toggleModal,
+          onClick: toggleModal,
           label: "Contact Us",
           color: "info",
         }}
@@ -72,16 +65,56 @@ function Presentation() {
               textAlign="center"
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
-                maxWidth:"60%",
+                maxWidth: "60%",
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
               })}
             >
-              Excellence in lubricants with Next generation of&#160;
+              Excellence in&#160;
+            </MKTypography>
+            <MKTypography
+              variant="h2"
+              color="white"
+              textAlign="center"
+              mb={1}
+              sx={({ breakpoints, typography: { size } }) => ({
+                maxWidth: "60%",
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
+            >
+              <TypeWriterEffect
+                textStyle={{
+                  color: "white",
+                  fontSize: pxToRem(36),
+                  lineHeight: 1.3,
+                }}
+                cursorColor="white"
+                multiText={["Chemical", "Energy", "Friction", "Metallurgy"]}
+                multiTextDelay={1000}
+                multiTextLoop={true}
+                typeSpeed={180}
+              />
+            </MKTypography>
+            <br />
+
+            <MKTypography
+              variant="h2"
+              color="white"
+              textAlign="center"
+              mb={1}
+              sx={({ breakpoints, typography: { size } }) => ({
+                maxWidth: "60%",
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
+            >
+              &#160; with Next generation of &#160;
               <u>Graphite</u>
             </MKTypography>
-           
           </Grid>
         </Container>
       </MKBox>
@@ -208,12 +241,12 @@ function Presentation() {
       <Company />
       <MKBox pt={6} px={1} mt={6}>
         {/* <DefaultFooter content={footerRoutes} /> */}
-        <SimpleFooter/>
+        <SimpleFooter />
       </MKBox>
       <Modal open={show} onClose={toggleModal} sx={{ display: "grid", placeItems: "center" }}>
-          <Slide direction="down" in={show} timeout={500}>
-            <Card>
-          <Stack>
+        <Slide direction="down" in={show} timeout={500}>
+          <Card>
+            <Stack>
               <MKBox display="flex" alignItems="center" p={2}>
                 <MKBox
                   width="3rem"
@@ -230,7 +263,7 @@ function Presentation() {
                   <Icon fontSize="small">phone</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-               <strong>+49 6123 703730</strong> 
+                  <strong>+49 6123 703730</strong>
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>
@@ -249,7 +282,7 @@ function Presentation() {
                   <Icon fontSize="small">email</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                <strong>info@lvhproducts.de</strong>
+                  <strong>info@lvhproducts.de</strong>
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>
@@ -273,9 +306,9 @@ function Presentation() {
                 </MKTypography>
               </MKBox>
             </Stack>
-            </Card>
-          </Slide>
-        </Modal>
+          </Card>
+        </Slide>
+      </Modal>
     </>
   );
 }

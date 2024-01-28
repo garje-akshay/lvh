@@ -79,15 +79,15 @@ function Information() {
           <Grid item xs={12} lg={7} >
             <Grid container spacing={3}>
             <Grid item xs={12} md={6}>
-                <DefaultInfoCard icon={polymers} title="Polymers" description="" />
+                <DefaultInfoCard icon={polymers} title="Chemical" description="" />
               </Grid>
               <Grid item xs={12} md={6}>
-                <DefaultInfoCard icon={energy} title="Energy Thermal Management" description="" />
+                <DefaultInfoCard icon={energy} title="Energy" description="" />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
-                <DefaultInfoCard icon={friction} title="Friction Materials" description="" />
+                <DefaultInfoCard icon={friction} title="Friction" description="" />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard icon={metallurgy} title="Metallurgy" description="" />
