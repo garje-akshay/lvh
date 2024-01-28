@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/lvh/static/js/main.6fe1256b.js",
+    "main.js": "/lvh/static/js/main.043b9337.js",
     "static/media/graphite-bg.jpg": "/lvh/static/media/graphite-bg.7d4c99a2fbb147cdadd5.jpg",
     "static/media/macbook.png": "/lvh/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
     "static/media/bg-coworking.jpeg": "/lvh/static/media/bg-coworking.06bccc47fe6ae5366bf8.jpeg",
@@ -34,9 +34,9 @@
     "index.html": "/lvh/index.html",
     "static/media/friction.svg": "/lvh/static/media/friction.8fbaa0a6e6578246e50d83e8e0427bf5.svg",
     "static/media/metallurgy.svg": "/lvh/static/media/metallurgy.e47aad6e81a2bcb150ba4b86c0e214b2.svg",
-    "main.6fe1256b.js.map": "/lvh/static/js/main.6fe1256b.js.map"
+    "main.043b9337.js.map": "/lvh/static/js/main.043b9337.js.map"
   },
   "entrypoints": [
-    "static/js/main.6fe1256b.js"
+    "static/js/main.043b9337.js"
   ]
 }
