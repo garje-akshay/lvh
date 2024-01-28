@@ -570,7 +570,7 @@ function DefaultNavbar({
                 </MKButton>
               ))}
           </MKBox>
-          <MKBox
+          {/* <MKBox
             display={{ xs: "inline-block", lg: "none" }}
             lineHeight={0}
             py={1.5}
@@ -580,7 +580,7 @@ function DefaultNavbar({
             onClick={openMobileNavbar}
           >
             <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon>
-          </MKBox>
+          </MKBox> */}
         </MKBox>
         <MKBox
           bgColor={transparent ? "white" : "transparent"}
