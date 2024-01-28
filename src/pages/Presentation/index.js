@@ -34,6 +34,26 @@ function Presentation() {
     <>
       <DefaultNavbar
         routes={[]}
+        refRoutes={[
+          {
+            label: "Applications",
+            onClick: () => {
+              document.getElementById("application")?.scrollIntoView(false);
+            },
+          },
+          {
+            label: "Products",
+            onClick: () => {
+              document.getElementById("products")?.scrollIntoView(true);
+            },
+          },
+          {
+            label: "Company",
+            onClick: () => {
+              document.getElementById("company")?.scrollIntoView(true);
+            },
+          },
+        ]}
         action={{
           type: "click",
           onClick: toggleModal,
@@ -93,9 +113,9 @@ function Presentation() {
                 }}
                 cursorColor="white"
                 multiText={["Chemical", "Energy", "Friction", "Metallurgy"]}
-                multiTextDelay={1000}
+                multiTextDelay={2000}
                 multiTextLoop={true}
-                typeSpeed={180}
+                typeSpeed={120}
               />
             </MKTypography>
             <br />

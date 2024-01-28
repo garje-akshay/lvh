@@ -10,12 +10,12 @@ import MKTypography from "components/MKTypography";
 
 function Company() {
   return (
-    <MKBox component="section" py={{ xs: 3, md: 3 }}>
+    <MKBox id={"company"} component="section" py={{ xs: 3, md: 3 }}>
       <Container>
         <Grid container alignItems="center">
           <Grid item xs={12} lg={7}>
             <MKTypography variant="h3" mb={4}>
-              “We know Graphite ! <br /> Let’s Grow together with Graphite “
+              “ We know Graphite ! <br /> Let’s Grow together with Graphite ”
             </MKTypography>
             <MKTypography variant="subtitle1" color="text" p={2} mb={2}>
               <ul style={{ listStyleType: "disc" }}>
@@ -58,7 +58,7 @@ function Company() {
                   <Icon fontSize="small">phone</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-               <strong>+49 6123 703730</strong> 
+                  <strong>+49 6123 703730</strong>
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>
@@ -77,7 +77,7 @@ function Company() {
                   <Icon fontSize="small">email</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                <strong>info@lvhproducts.de</strong>
+                  <strong>info@lvhproducts.de</strong>
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>

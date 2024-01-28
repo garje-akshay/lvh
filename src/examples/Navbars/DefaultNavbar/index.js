@@ -46,7 +46,16 @@ import breakpoints from "assets/theme/base/breakpoints";
 //Assets
 import LVH from "assets/images/Logo_LVH.png";
 
-function DefaultNavbar({ routes, transparent, light, action, sticky, relative, center }) {
+function DefaultNavbar({
+  routes,
+  transparent,
+  light,
+  action,
+  sticky,
+  relative,
+  center,
+  refRoutes = [],
+}) {
   const [dropdown, setDropdown] = useState("");
   const [dropdownEl, setDropdownEl] = useState("");
   const [dropdownName, setDropdownName] = useState("");
@@ -83,6 +92,36 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", displayMobileNavbar);
   }, []);
+
+  const refNavs = refRoutes.map((refRoute) => (
+    <MKTypography
+      display="flex"
+      justifyContent="space-between"
+      alignItems="center"
+      variant="button"
+      textTransform="capitalize"
+      color={"dark"}
+      fontWeight={"bold"}
+      py={1}
+      pr={4}
+      sx={({ palette: { info, dark }, borders: { borderRadius } }) => ({
+        borderRadius: borderRadius.md,
+        cursor: "pointer",
+        transition: "all 300ms linear",
+
+        "&:hover": {
+          color: info.main,
+
+          "& *": {
+            color: info.main,
+          },
+        },
+      })}
+      onClick={refRoute.onClick}
+    >
+      {refRoute.label}
+    </MKTypography>
+  ));
 
   const renderNavbarItems = routes.map(({ name, icon, href, route, collapse }) => (
     <DefaultNavbarDropdown
@@ -473,7 +512,7 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">
           <MKBox component={Link} to="/" lineHeight={1}>
-            <MKBox component="img" to="/" src={LVH} alt={"logo"} width={50} />
+            <MKBox component="img" to="/" src={LVH} alt={"logo"} width={80} />
           </MKBox>
           <MKBox
             color="inherit"
@@ -481,7 +520,8 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
             ml="auto"
             mr={center ? "auto" : 0}
           >
-            {renderNavbarItems}
+            {/* {renderNavbarItems} */}
+            {refNavs}
           </MKBox>
           <MKBox ml={{ xs: "auto", lg: 0 }}>
             {action &&
@@ -499,19 +539,21 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
                 >
                   {action.label}
                 </MKButton>
+              ) : action.type === "click" ? (
+                <MKButton
+                  onClick={action.onClick}
+                  variant={
+                    action.color === "white" || action.color === "default"
+                      ? "contained"
+                      : "gradient"
+                  }
+                  color={action.color ? action.color : "info"}
+                  size="small"
+                >
+                  {action.label}
+                </MKButton>
               ) : (
-                action.type === "click" ? <MKButton
-                onClick={action.onClick}
-                variant={
-                  action.color === "white" || action.color === "default"
-                    ? "contained"
-                    : "gradient"
-                }
-                color={action.color ? action.color : "info"}
-                size="small"
-              >
-                {action.label}
-              </MKButton>:<MKButton
+                <MKButton
                   component="a"
                   href={action.route}
                   target="_blank"
@@ -546,7 +588,7 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
           borderRadius="xl"
           px={transparent ? 2 : 0}
         >
-          {mobileView && <DefaultNavbarMobile routes={routes} open={mobileNavbar} />}
+          {/* {mobileView && <DefaultNavbarMobile routes={routes} open={mobileNavbar} />} */}
         </MKBox>
       </MKBox>
       {dropdownMenu}
@@ -577,7 +619,7 @@ DefaultNavbar.propTypes = {
     PropTypes.shape({
       type: PropTypes.oneOf(["external", "internal"]).isRequired,
       route: PropTypes.string.isRequired,
-      onClick:PropTypes.func,
+      onClick: PropTypes.func,
       color: PropTypes.oneOf([
         "primary",
         "secondary",
