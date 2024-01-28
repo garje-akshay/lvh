@@ -21,7 +21,7 @@ import Information from "pages/Presentation/sections/Information";
 import bgImage from "assets/images/graphite-bg.jpg";
 import Data from "./sections/Data";
 import Company from "./sections/Company";
-import { Icon, Modal, Slide, Stack } from "@mui/material";
+import { Box, Icon, Modal, Slide, Stack } from "@mui/material";
 import { useState } from "react";
 import SimpleFooter from "examples/Footers/SimpleFooter";
 import TypeWriterEffect from "react-typewriter-effect";
@@ -86,39 +86,26 @@ function Presentation() {
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 maxWidth: "60%",
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
               })}
             >
-              Excellence in&#160;
-            </MKTypography>
-            <MKTypography
-              variant="h2"
-              color="white"
-              textAlign="center"
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                maxWidth: "60%",
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
-            >
-              <TypeWriterEffect
-                textStyle={{
-                  color: "white",
-                  fontSize: pxToRem(36),
-                  lineHeight: 1.3,
-                }}
-                cursorColor="white"
-                multiText={["Chemical", "Energy", "Friction", "Metallurgy"]}
-                multiTextDelay={2000}
-                multiTextLoop={true}
-                typeSpeed={120}
-              />
+              {"Excellence in \n"}
             </MKTypography>
             <br />
+            <Box sx={{ width: "100%" }}></Box>
+            <TypeWriterEffect
+              textStyle={{
+                color: "white",
+                fontSize: pxToRem(36),
+                lineHeight: 1.3,
+                textAlign: "center",
+              }}
+              cursorColor="white"
+              multiText={["Chemical", "Energy", "Friction", "Metallurgy"]}
+              multiTextDelay={2000}
+              multiTextLoop={true}
+              typeSpeed={120}
+            />
+            <Box sx={{ width: "100%" }}></Box>
 
             <MKTypography
               variant="h2"
@@ -127,9 +114,6 @@ function Presentation() {
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 maxWidth: "60%",
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
               })}
             >
               &#160; with Next generation of &#160;
