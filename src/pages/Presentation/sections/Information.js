@@ -72,7 +72,7 @@ function Information() {
               />
             </Grid>
             <Grid item xs={12} lg={7}>
-              <Grid container spacing={3}>
+              <Grid container >
                 <Grid item xs={12} md={6}>
                   <DefaultInfoCard
                     icon={polymers}
@@ -111,7 +111,7 @@ function Information() {
                   />
                 </Grid>
               </Grid>
-              <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
+              <Grid container >
                 <Grid item xs={12} md={6}>
                   <DefaultInfoCard
                     icon={friction}

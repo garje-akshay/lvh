@@ -30,6 +30,19 @@ import pxToRem from "assets/theme/functions/pxToRem";
 function Presentation() {
   const [show, setShow] = useState(false);
   const toggleModal = () => setShow(!show);
+
+  function scrollToTargetAdjusted(id){
+    var element = document.getElementById(id);
+    var headerOffset = 150;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+    window.scrollTo({
+         top: offsetPosition,
+         behavior: "smooth"
+    });
+}
+
   return (
     <>
       <DefaultNavbar
@@ -38,13 +51,13 @@ function Presentation() {
           {
             label: "Applications",
             onClick: () => {
-              document.getElementById("application")?.scrollIntoView(false);
+              scrollToTargetAdjusted("application")
             },
           },
           {
             label: "Products",
             onClick: () => {
-              document.getElementById("products")?.scrollIntoView(true);
+              scrollToTargetAdjusted("products")
             },
           },
           {
@@ -240,7 +253,6 @@ function Presentation() {
           </Container>
         </MKBox> */}
       </Card>
-
       <Data />
       <Company />
       <MKBox pt={6} px={1} mt={6}>
