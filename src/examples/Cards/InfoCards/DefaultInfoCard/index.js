@@ -22,7 +22,7 @@ import MKTypography from "components/MKTypography";
 
 function DefaultInfoCard({ icon, title, description, direction, small }) {
   return (
-    <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction} >
+    <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
       <img src={icon} height={100} width={100}></img>
       <MKTypography
         display="block"
@@ -33,15 +33,19 @@ function DefaultInfoCard({ icon, title, description, direction, small }) {
       >
         {title}
       </MKTypography>
-      <MKTypography
-        display="block"
-        variant={small ? "button" : "body2"}
-        color="text"
-        pr={direction === "left" ? 6 : 0}
-        pl={direction === "right" ? 6 : 0}
-      >
-        {description}
-      </MKTypography>
+      {typeof description == "string" ? (
+        <MKTypography
+          display="block"
+          variant={small ? "button" : "body2"}
+          color="text"
+          pr={direction === "left" ? 6 : 0}
+          pl={direction === "right" ? 6 : 0}
+        >
+          {description}
+        </MKTypography>
+      ) : (
+        description
+      )}
     </MKBox>
   );
 }
@@ -67,7 +71,7 @@ DefaultInfoCard.propTypes = {
   ]),
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.any,
   direction: PropTypes.oneOf(["left", "right", "center"]),
   small: PropTypes.bool,
 };

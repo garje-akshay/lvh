@@ -41,7 +41,7 @@ function Information() {
           <MKTypography variant="subtitle1" color="text" textAlign="Left" mt={1} pb={3}>
             Graphite is a Unique and essential form of Carbon in current Industrial society and
             becoming an indispensable material in many novel innovations.
-            <br /> Graphite is a material having special electrical, thermal, and mechanical
+            <br /> Graphite is a material having special electrical, thermal, and lubricity
             properties and has many general applications like in steel making, refractories,
             lubricant, batteries, metal forming, etc.
           </MKTypography>
@@ -74,18 +74,81 @@ function Information() {
             <Grid item xs={12} lg={7}>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
-                  <DefaultInfoCard icon={polymers} title="Chemical" description="" />
+                  <DefaultInfoCard
+                    icon={polymers}
+                    title="Chemical"
+                    description={
+                      <dl
+                        style={{
+                          display: "inline-block",
+                          width: "fit-content",
+                          textAlign: "start",
+                        }}
+                      >
+                        <li>Paint</li>
+                        <li>Coating</li>
+                        <li>Polymers</li>
+                      </dl>
+                    }
+                  />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <DefaultInfoCard icon={energy} title="Energy" description="" />
+                  <DefaultInfoCard
+                    icon={energy}
+                    title="Energy"
+                    description={
+                      <dl
+                        style={{
+                          display: "inline-block",
+                          width: "fit-content",
+                          textAlign: "start",
+                        }}
+                      >
+                        <li>Batteries</li>
+                        <li>Brushes</li>
+                      </dl>
+                    }
+                  />
                 </Grid>
               </Grid>
               <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
                 <Grid item xs={12} md={6}>
-                  <DefaultInfoCard icon={friction} title="Friction" description="" />
+                  <DefaultInfoCard
+                    icon={friction}
+                    title="Friction"
+                    description={
+                      <dl
+                        style={{
+                          display: "inline-block",
+                          width: "fit-content",
+                          textAlign: "start",
+                        }}
+                      >
+                        <li>Break Lining</li>
+                        <li>Break shoe</li>
+                        <li>Break pad</li>
+                      </dl>
+                    }
+                  />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <DefaultInfoCard icon={metallurgy} title="Metallurgy" description="" />
+                  <DefaultInfoCard
+                    icon={metallurgy}
+                    title="Metallurgy"
+                    description={
+                      <dl
+                        style={{
+                          display: "inline-block",
+                          width: "fit-content",
+                          textAlign: "start",
+                        }}
+                      >
+                        <li>Casting</li>
+                        <li>Refactories</li>
+                        <li>Steel</li>
+                      </dl>
+                    }
+                  />
                 </Grid>
               </Grid>
             </Grid>
