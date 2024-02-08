@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.0980818e.js",
+    "main.js": "/static/js/main.f05e669f.js",
     "static/media/graphite-bg.jpg": "/static/media/graphite-bg.7d4c99a2fbb147cdadd5.jpg",
     "static/media/macbook.png": "/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
     "static/media/bg-coworking.jpeg": "/static/media/bg-coworking.06bccc47fe6ae5366bf8.jpeg",
@@ -34,9 +34,9 @@
     "static/media/friction.svg": "/static/media/friction.8fbaa0a6e6578246e50d83e8e0427bf5.svg",
     "index.html": "/index.html",
     "static/media/metallurgy.svg": "/static/media/metallurgy.e47aad6e81a2bcb150ba4b86c0e214b2.svg",
-    "main.0980818e.js.map": "/static/js/main.0980818e.js.map"
+    "main.f05e669f.js.map": "/static/js/main.f05e669f.js.map"
   },
   "entrypoints": [
-    "static/js/main.0980818e.js"
+    "static/js/main.f05e669f.js"
   ]
 }
