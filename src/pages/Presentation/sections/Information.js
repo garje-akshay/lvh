@@ -35,7 +35,7 @@ import MKTypography from "components/MKTypography";
 
 function Information() {
   return (
-    <div id="application">
+    <div>
       <MKBox component="section" py={3}>
         <Container>
           <MKTypography variant="subtitle1" color="text" textAlign="Left" mt={1} pb={3}>
@@ -46,7 +46,7 @@ function Information() {
             lubricant, batteries, metal forming, etc.
           </MKTypography>
           <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-            <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <Grid item xs={12} lg={4} sx={{ mx: "auto" }} id="application">
               {/*<RotatingCard>
               <RotatingCardFront
                 image={bgFront}
@@ -72,7 +72,7 @@ function Information() {
               />
             </Grid>
             <Grid item xs={12} lg={7}>
-              <Grid container >
+              <Grid container>
                 <Grid item xs={12} md={6}>
                   <DefaultInfoCard
                     icon={polymers}
@@ -111,7 +111,7 @@ function Information() {
                   />
                 </Grid>
               </Grid>
-              <Grid container >
+              <Grid container>
                 <Grid item xs={12} md={6}>
                   <DefaultInfoCard
                     icon={friction}
