@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.f05e669f.js",
+    "main.js": "/static/js/main.1aadf0b4.js",
     "static/media/graphite-bg.jpg": "/static/media/graphite-bg.7d4c99a2fbb147cdadd5.jpg",
     "static/media/macbook.png": "/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
     "static/media/bg-coworking.jpeg": "/static/media/bg-coworking.06bccc47fe6ae5366bf8.jpeg",
@@ -29,14 +29,14 @@
     "static/media/drilling.svg": "/static/media/drilling.6dedbcc82b8a58e0472c76f4f328f5ff.svg",
     "static/media/logo-nasa.svg": "/static/media/logo-nasa.c5d11f8820bfde5fd64db0074156e06c.svg",
     "static/media/logo-netflix.svg": "/static/media/logo-netflix.432ed6b5c31b9bcab9a38e32bf46a1e9.svg",
-    "static/media/polymers.svg": "/static/media/polymers.c1155a06c970553380e66afa381ccd5d.svg",
-    "static/media/energy.svg": "/static/media/energy.9167980495a33b9b2e14646e488795c7.svg",
-    "static/media/friction.svg": "/static/media/friction.8fbaa0a6e6578246e50d83e8e0427bf5.svg",
+    "static/media/polymers.svg": "/static/media/polymers.8d8beff71f58b51a0af708b45c973b16.svg",
+    "static/media/energy.svg": "/static/media/energy.6fabf4cd0a8fd4018dc9448760dcbea2.svg",
+    "static/media/friction.svg": "/static/media/friction.e9197c59c34a4916e9e0c3596c3763ca.svg",
     "index.html": "/index.html",
-    "static/media/metallurgy.svg": "/static/media/metallurgy.e47aad6e81a2bcb150ba4b86c0e214b2.svg",
-    "main.f05e669f.js.map": "/static/js/main.f05e669f.js.map"
+    "static/media/metallurgy.svg": "/static/media/metallurgy.8c22b436c1a2bdc660c784d6f73ae406.svg",
+    "main.1aadf0b4.js.map": "/static/js/main.1aadf0b4.js.map"
   },
   "entrypoints": [
-    "static/js/main.f05e669f.js"
+    "static/js/main.1aadf0b4.js"
   ]
 }
