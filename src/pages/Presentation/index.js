@@ -279,7 +279,7 @@ function Presentation() {
                   <Icon fontSize="small">phone</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  <strong>+49 6123 703730</strong>
+                  <strong><a href="tel:+49 6123 703730" style={{color:"black"}}>+49 6123 703730</a></strong>
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>
@@ -298,10 +298,10 @@ function Presentation() {
                   <Icon fontSize="small">email</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  <strong>info@lvhproducts.de</strong>
+                  <strong><a href="mailto:info@lvhproducts.de" style={{color:"black"}}>info@lvhproducts.de</a></strong>
                 </MKTypography>
               </MKBox>
-              <MKBox display="flex" alignItems="center" p={2}>
+              <MKBox display="flex" alignItems="center" p={2} >
                 <MKBox
                   width="3rem"
                   height="3rem"
@@ -317,7 +317,7 @@ function Presentation() {
                   <Icon fontSize="small">map</Icon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  <strong>LVH Products GmbH.</strong> <br />
+                  <strong><a href="https://maps.app.goo.gl/3y2zkH3s88vEmNNGA" style={{color:"black"}}>LVH Products GmbH.</a></strong> <br />
                   Rosengasse 1, Eltville DE65343 , Germany
                 </MKTypography>
               </MKBox>

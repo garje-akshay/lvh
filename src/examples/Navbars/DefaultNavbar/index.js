@@ -45,6 +45,7 @@ import breakpoints from "assets/theme/base/breakpoints";
 
 //Assets
 import LVH from "assets/images/Logo_LVH.png";
+import { Stack } from "@mui/material";
 
 function DefaultNavbar({
   routes,
@@ -512,7 +513,9 @@ function DefaultNavbar({
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">
           <MKBox component={Link} to="/" lineHeight={1}>
+            <Stack direction={"row"} spacing={2} textAlign={"center"} alignItems={"center"}>
             <MKBox component="img" to="/" src={LVH} alt={"logo"} width={80} />
+            <MKTypography variant="h4">LVH Products GmbH</MKTypography></Stack>
           </MKBox>
           <MKBox
             color="inherit"
